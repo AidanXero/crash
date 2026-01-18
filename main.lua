@@ -1,7 +1,7 @@
 -- Kohl Smasher made by Korabi#8910
 local ont = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport or function()
     end
-ont("loadstring(game:HttpGet(('https://raw.githubusercontent.com/Korabi-dev/roblox-crasher/main/main.lua'),true))()")
+ont("loadstring(game:HttpGet(('https://raw.githubusercontent.com/AidanXero/crash/refs/heads/main/main.lua'),true))()")
  coroutine.wrap(function()
 task.wait(5)
 if not game:IsLoaded() then
@@ -36,7 +36,7 @@ local s, e =
         local plyrs = game:GetService("Players")
         local rns = game:GetService("RunService")
         local whitelisted =
-            game:HttpGet("https://raw.githubusercontent.com/Korabi-dev/roblox-crasher/main/whitelisted.json")
+            game:HttpGet("https://raw.githubusercontent.com/AidanXero/crash/refs/heads/main/whitelisted.json")
         whitelisted = game:GetService("HttpService"):JSONDecode(whitelisted)
         if not whitelisted then
             whitelisted = {users = {}}
